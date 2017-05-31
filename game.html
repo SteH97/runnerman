@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Runner Man</title>
+    <link rel='stylesheet' href='game.css'/>
+  </head>
+  <body>
+    <div id='wrapper'>
+        
+      <div id='toast'></div> 
+
+      <div id='credits' class='credits'>
+        <div class='credit'>
+          <div class='title'>
+            ~ Game Design and Programming ~
+          </div>
+          <div class='attribution'>
+            Steshik,Guzev and Glytov
+          </div>
+        </div>
+        <div>
+          <a id='new-game-link' href='#' style="font-size: 50px;">Play again</a>
+        </div>                     
+      </div> 
+
+      <div id='header'>
+        <div id='score'>0</div>
+        <div id='lives'>
+          <img id='life-icon-left' src='images/runner-small.png'/>
+          <img id='life-icon-middle' src='images/runner-small.png'/>
+          <img id='life-icon-right' src='images/runner-small.png'/>
+        </div>
+      </div>
+
+      <div id='arena'>
+        <canvas id='game-canvas' width='800' height='400'>
+          Ваш браузер не поддерживает холст Canvas HTML5.
+        </canvas>
+        <div id='instructions'>
+          <div class='keys'>
+            a / d <div class='explanation'> move left/right</div>
+          </div>
+          <div class='keys'>
+            space <div class='explanation'> jump </div>
+          </div>
+          <div class='keys'>
+            p <div class='explanation'> pause </div>
+          </div>
+        </div>         
+        <div id='copyright'> Steshik,Guzev and Glytov</div>
+      </div>
+    </div>
+
+    <script src='js/sprites.js'></script>
+    <script src='js/stopwatch.js'></script>
+    <script src='js/animationTimer.js'></script>
+    <script src='js/behaviors/cycle.js'></script>
+    <script src='js/behaviors/pulse.js'></script>
+    <script src='js/behaviors/bounce.js'></script>
+    <script src='js/requestNextAnimationFrame.js'></script>
+    <script src='game.js'></script>
+  </body>
+</html>
